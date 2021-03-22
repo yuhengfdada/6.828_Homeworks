@@ -18,7 +18,7 @@ struct entry *table[NBUCKET];
 int keys[NKEYS];
 int nthread = 1;
 volatile int done = 0;
-pthread_mutex_t *locks; // declare a lock
+pthread_mutex_t *locks; // declare an array of locks for each bucket
 
 
 double
